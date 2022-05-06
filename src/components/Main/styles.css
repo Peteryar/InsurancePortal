@@ -1,0 +1,18 @@
+.main-con{
+    background: #F4F5F9;
+    height:92.2vh;
+    padding-left: 35px;
+}
+.main-banner-con{
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    margin-bottom: 20px;
+    /* background-color: red; */
+}
+
+.main-cards-con{
+    display: flex;
+    width: 91.5%;
+    justify-content: space-between;
+}

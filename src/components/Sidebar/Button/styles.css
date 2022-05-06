@@ -1,22 +1,21 @@
 .button-con {
-    display: flex;
-    justify-content: space-around;
-    background: #713BDB;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.12);
-    border-radius: 7px;
-    width: 168px;
-    height: 35px;
-    align-items: center;
-    border: none;
-    margin:0 auto;
+  display: flex;
+  justify-content: space-around;
+  background: #713bdb;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 7px;
+  width: 168px;
+  height: 35px;
+  align-items: center;
+  border: none;
+  margin: 0 auto;
 }
 
 .button-con p {
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
-    color: #FFFBFB;
-
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fffbfb;
 }

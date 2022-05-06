@@ -6,12 +6,12 @@ import UserIcon from './assets/user account.svg';
 import HistoryIcon from './assets/history.svg';
 
 const icons = {
-    PolicyIcon,
-    MenuIcon,
-    ReportsIcon,
-    CompanyIcon,
-    UserIcon,
-    HistoryIcon
-}
+  PolicyIcon,
+  MenuIcon,
+  ReportsIcon,
+  CompanyIcon,
+  UserIcon,
+  HistoryIcon
+};
 
-export default icons
+export default icons;

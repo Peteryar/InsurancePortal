@@ -1,41 +1,41 @@
 .user-info-con {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .user-info-con p {
-    text-align: center;
+  text-align: center;
 }
 
 .user-text1 {
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #888CB7;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #888cb7;
 }
 
 .user-text2 {
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 13px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
 
-    color: #A2A4B9;
+  color: #a2a4b9;
 }
 
 .user-text3 {
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: #A2A4B9;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #a2a4b9;
 }
-.user-text3 em{
-    color:green;
-    font-style: normal;
+.user-text3 em {
+  color: green;
+  font-style: normal;
 }

@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Dashboard from './Dashboard/Dashboard';
 
 function App() {
-  return <Dashboard/>
+  return <Dashboard />;
 }
 
 export default App;

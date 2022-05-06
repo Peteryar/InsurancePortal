@@ -1,0 +1,24 @@
+.header-con {
+    display: flex;
+    align-items: center;
+    height: 7.8vh;
+    width: 81%;
+    background: #FFFFFF;
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 20px 0px 0px;
+}
+
+.header-con ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-items {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #42474A;
+    margin-right: 35px;
+}

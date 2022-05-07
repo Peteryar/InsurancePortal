@@ -11,7 +11,7 @@ function Main() {
   return (
     <div data-testid="main" className="main-con">
       <div className="main-banner-con">
-        <img src={banner} />
+        <img width="100%" src={banner} />
       </div>
       <div className="main-cards-con">
         {activities.map((item, i) => (

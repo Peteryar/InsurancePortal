@@ -1,4 +1,5 @@
-import { ReactComponent as Banner } from '../../assets/banner.svg';
+// import { ReactComponent as Banner } from '../../assets/banner.svg';
+import banner from '../../assets/banner.svg';
 import Card from '../Card/Card';
 import './styles.css';
 function Main() {
@@ -10,7 +11,7 @@ function Main() {
   return (
     <div data-testid="main" className="main-con">
       <div className="main-banner-con">
-        <Banner />
+        <img src={banner} />
       </div>
       <div className="main-cards-con">
         {activities.map((item, i) => (

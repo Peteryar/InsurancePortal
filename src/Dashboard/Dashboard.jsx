@@ -8,7 +8,7 @@ import './styles.css';
 function Dashboard() {
   const [showSidebar, setShowSidebar] = useState(false);
   return (
-    <div className="dashboard-con">
+    <div data-testid="dashboard" className="dashboard-con">
       <Sidebar showSidebar={showSidebar} closeSidebar={() => setShowSidebar(false)} />
       <div className="dashboard-right">
         <Header toggleSidebar={() => setShowSidebar(!showSidebar)} />

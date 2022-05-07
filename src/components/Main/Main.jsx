@@ -8,7 +8,7 @@ function Main() {
     { total: 2500, policy: 1100, claim: 1400 }
   ];
   return (
-    <div className="main-con">
+    <div data-testid="main" className="main-con">
       <div className="main-banner-con">
         <Banner />
       </div>

@@ -13,13 +13,14 @@
     display: flex;
     justify-content: flex-start;
     width: 90%;
+    box-sizing: border-box;
     margin-bottom: 20px;
 }
 
 .main-cards-con {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 91.5%;
     justify-content: space-between;
 }
 

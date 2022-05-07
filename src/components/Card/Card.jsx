@@ -49,7 +49,7 @@ Liner.propTypes = {
   title: PropTypes.string,
   value: PropTypes.number,
   percent: PropTypes.number,
-  color: PropTypes.color
+  color: PropTypes.string
 };
 
 Card.propTypes = {

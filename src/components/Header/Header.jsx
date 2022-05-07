@@ -10,7 +10,7 @@ function Header({ toggleSidebar }) {
     setActive(pathName);
   };
   return (
-    <div className="header-con">
+    <div data-testid="header" className="header-con">
       <ul>
         <span className={active === 'overview' ? 'nav-item-con-active' : 'nav-item-con'}>
           <li onClick={() => navigate('overview')}>Overview</li>

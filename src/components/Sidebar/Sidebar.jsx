@@ -24,7 +24,10 @@ function Sidebar({ showSidebar, closeSidebar }) {
     { name: 'History', icon: 'description' }
   ];
   return (
-    <div style={{ display: showSidebar ? 'flex' : null }} className="sidebar-con">
+    <div
+      data-testid="sidebar"
+      style={{ display: showSidebar ? 'flex' : null }}
+      className="sidebar-con">
       <div className="sidebar-top">
         <Logo />
         <UserInfo />

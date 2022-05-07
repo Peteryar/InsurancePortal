@@ -1,15 +1,18 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import Item from '../Item/Item';
 import Logo from '../Logo/Logo';
 import UserInfo from '../UserInfo/UserInfo';
 import Button from './Button/Button';
 import './styles.css';
 
-function Sidebar() {
+function Sidebar({ showSidebar, closeSidebar }) {
   const [active, setActive] = useState(2);
+  // const [deviceWidth, setDeviceWith] = useState(window.innerWidth);
 
   const navigate = (path) => {
     setActive(path);
+    closeSidebar();
   };
 
   const items = [
@@ -21,7 +24,7 @@ function Sidebar() {
     { name: 'History', icon: 'description' }
   ];
   return (
-    <div className="sidebar-con">
+    <div style={{ display: showSidebar ? 'flex' : null }} className="sidebar-con">
       <div className="sidebar-top">
         <Logo />
         <UserInfo />
@@ -38,11 +41,16 @@ function Sidebar() {
           />
         ))}
       </div>
-      <div style={{ height: '10%' }}>
+      <div>
         <Item text="Log Out" />
       </div>
     </div>
   );
 }
+
+Sidebar.propTypes = {
+  showSidebar: PropTypes.bool,
+  closeSidebar: PropTypes.func
+};
 
 export default Sidebar;

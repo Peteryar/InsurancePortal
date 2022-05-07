@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Header from '../components/Header/Header';
 import Main from '../components/Main/Main';
 import Sidebar from '../components/Sidebar/Sidebar';
@@ -5,11 +6,12 @@ import Sidebar from '../components/Sidebar/Sidebar';
 import './styles.css';
 
 function Dashboard() {
+  const [showSidebar, setShowSidebar] = useState(false);
   return (
     <div className="dashboard-con">
-      <Sidebar />
+      <Sidebar showSidebar={showSidebar} closeSidebar={() => setShowSidebar(false)} />
       <div className="dashboard-right">
-        <Header />
+        <Header toggleSidebar={() => setShowSidebar(!showSidebar)} />
         <Main />
       </div>
     </div>

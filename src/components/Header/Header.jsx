@@ -1,6 +1,9 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
+
 import './styles.css';
-function Header() {
+
+function Header({ toggleSidebar }) {
   const [active, setActive] = useState('reports');
 
   const navigate = (pathName) => {
@@ -22,8 +25,17 @@ function Header() {
           <div></div>
         </span>
       </ul>
+      <div>
+        <span onClick={toggleSidebar} className="material-symbols-outlined hamburger-menu">
+          menu
+        </span>
+      </div>
     </div>
   );
 }
+
+Header.propTypes = {
+  toggleSidebar: PropTypes.func
+};
 
 export default Header;

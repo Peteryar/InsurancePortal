@@ -1,17 +1,21 @@
 .header-con {
   display: flex;
   align-items: center;
-  height: 8%;
+  justify-content: space-between;
+  height: 10%;
   width: 100%;
   background: #ffffff;
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 0px 20px 0px 0px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 
 .header-con ul {
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .nav-item-con, .nav-item-con-active {
@@ -53,4 +57,10 @@
   cursor: pointer;
   width: 100%;
   color: #713BDB;
+}
+
+@media screen and (min-width: 600px) {
+  .hamburger-menu {
+    display: none;
+  }
 }

@@ -11,7 +11,7 @@ function Dashboard() {
     <div data-testid="dashboard" className="dashboard-con">
       <Sidebar showSidebar={showSidebar} closeSidebar={() => setShowSidebar(false)} />
       <div className="dashboard-right">
-        <Header toggleSidebar={() => setShowSidebar(!showSidebar)} />
+        <Header showSidebar={showSidebar} toggleSidebar={() => setShowSidebar(!showSidebar)} />
         <Main />
       </div>
     </div>

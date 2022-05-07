@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-function Header({ toggleSidebar }) {
+function Header({ toggleSidebar, showSidebar }) {
   const [active, setActive] = useState('reports');
 
   const navigate = (pathName) => {
@@ -26,16 +26,23 @@ function Header({ toggleSidebar }) {
         </span>
       </ul>
       <div>
-        <span onClick={toggleSidebar} className="material-symbols-outlined hamburger-menu">
-          menu
-        </span>
+        {showSidebar ? (
+          <span onClick={toggleSidebar} className="material-symbols-outlined hamburger-menu">
+            close
+          </span>
+        ) : (
+          <span onClick={toggleSidebar} className="material-symbols-outlined hamburger-menu">
+            menu
+          </span>
+        )}
       </div>
     </div>
   );
 }
 
 Header.propTypes = {
-  toggleSidebar: PropTypes.func
+  toggleSidebar: PropTypes.func,
+  showSidebar: PropTypes.bool
 };
 
 export default Header;

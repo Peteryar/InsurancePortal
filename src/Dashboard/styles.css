@@ -1,8 +1,15 @@
 .dashboard-con {
   display: flex;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #F4F5F9;
 }
 .dashboard-right {
-  width: 81vw;
+  width: calc(100% - 310px);
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .dashboard-right {
+  width: 100%;
+  }
 }

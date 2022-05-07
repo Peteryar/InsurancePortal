@@ -1,11 +1,26 @@
+import { useState } from 'react';
 import './styles.css';
 function Header() {
+  const [active, setActive] = useState('reports');
+
+  const navigate = (pathName) => {
+    setActive(pathName);
+  };
   return (
     <div className="header-con">
       <ul>
-        <li className="nav-items">Overview</li>
-        <li className="nav-items">Policy</li>
-        <li className="nav-items">Reports</li>
+        <span className={active === 'overview' ? 'nav-item-con-active' : 'nav-item-con'}>
+          <li onClick={() => navigate('overview')}>Overview</li>
+          <div></div>
+        </span>
+        <span className={active === 'policy' ? 'nav-item-con-active' : 'nav-item-con'}>
+          <li onClick={() => navigate('policy')}>Policy</li>
+          <div></div>
+        </span>
+        <span className={active === 'reports' ? 'nav-item-con-active' : 'nav-item-con'}>
+          <li onClick={() => navigate('reports')}>Reports</li>
+          <div></div>
+        </span>
       </ul>
     </div>
   );

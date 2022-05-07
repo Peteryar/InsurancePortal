@@ -4,11 +4,13 @@
   background: #713bdb;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.12);
   border-radius: 7px;
-  width: 168px;
+  width: 70%;
   height: 35px;
   align-items: center;
   border: none;
   margin: 0 auto;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .button-con p {

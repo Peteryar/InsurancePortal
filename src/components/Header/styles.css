@@ -1,24 +1,56 @@
 .header-con {
   display: flex;
   align-items: center;
-  height: 7.8vh;
+  height: 8%;
   width: 100%;
   background: #ffffff;
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 0px 20px 0px 0px;
 }
 
+
 .header-con ul {
   display: flex;
   list-style: none;
 }
 
-.nav-items {
+.nav-item-con, .nav-item-con-active {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.nav-item-con div {
+  width: 20px;
+  height: 2px;
+}
+.nav-item-con-active div{
+  width: 20px;
+  height: 2px;
+  background-color: #713BDB;
+}
+
+.nav-item-con li {
   font-family: 'Segoe UI';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #42474a;
-  margin-right: 35px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.nav-item-con-active li {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #42474a;
+  cursor: pointer;
+  width: 100%;
+  color: #713BDB;
 }
